@@ -79,7 +79,7 @@ input:checked + .slider:before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #656565;
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -91,17 +91,17 @@ input:checked + .slider:before {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: #77777730;
     -webkit-transition: .4s;
     transition: .4s;
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #2195f3a8;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #65656547;
   }
   
   input:checked + .slider:before {
@@ -140,3 +140,6 @@ input:checked + .slider:before {
   #lang-ua {
     right: 10px;
   }
+#slider-round{
+  background-color: #65656547;
+}

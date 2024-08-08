@@ -13,63 +13,63 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about" data-en="About" data-ua="Про мене">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects" data-en="Projects" data-ua="Проекти">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-en="Contact" data-ua="Контакти">Contact</a></li>
                 </ul>
-                <span class="nav-link">Engl</span>
+                <span class="nav-link lang-span">Engl</span>
                 <label class="switch">
                     <span id="lang-en" class="lang-button"></span>
                     <input type="checkbox" id="lang-switcher" aria-label="Switch language">
-                    <span class="slider round"></span>
+                    <span class="slider round" id="slider-round"></span>
                     <span id="lang-ua" class="lang-button"></span>
                 </label>
-                <span class="nav-link">Ukr</span>
+                <span class="nav-link lang-span">Ukr</span>
             </div>
         </nav>
     </header>
     <section id="hero">
         <h1 id="hero-title" data-en="Welcome to my Portfolio!" data-ua="Ласкаво просимо до мого порфоліо">Welcome to my Portfolio!</h1>
-        <p>Я програміст початківець з Києва,Україна. Маю знання мов html css та java script</p>
-        <button class="btn btn-primary">Learn More</button>
+        <p data-en="I'm a beginner programmer from Kyiv, Ukraine. I have knowledge of HTML, CSS, and JavaScript" data-ua="Я програміст початківець з Києва, України. Маю знання мов HTML, CSS та JavaScript">Я програміст початківець з Києва, України. Маю знання мов HTML, CSS та JavaScript</p>
+        <button class="btn btn-primary" data-en="Learn More" data-ua="Дізнатися більше">Learn More</button>
 
     </section>
     <section id="about">
-        <h2>About Me</h2>
+        <h2 data-en="About Me" data-ua="Про мене">About Me</h2>
         
         
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <h2>My Projects</h2>
+        <h2 data-en="My Projects" data-ua="Мої проекти">My Projects</h2>
         <ul>
             <li>
-                <img src="./img/Screenshot_2.png" id="imgpr2" class="imgpr i3" alt="Project 1 " style="width: 270px;">
-                <h3>Project 1:My first command project </h3>
-                <p>HTML and CSS command project </p>
-                <a href="https://github.com/ByteMe6/practicnharobota2" target="_blank" class="btn btn-success">View Live</a>
+                
+                <h3 data-en="Project 1: My first command project" data-ua="Проект 1: Мій перший командний проект">Project 1: My first command project</h3>
+                <p data-en="HTML and CSS command project" data-ua="Проект на HTML та CSS">HTML and CSS command project</p>
+                <a href="https://github.com/ByteMe6/practicnharobota2" target="_blank" class="btn btn-primary" data-en="View GitHub" data-ua="Переглянути на GitHub">View GitHub</a>
             </li>
             <li>
-                <img src="./img/Screenshot_1.png" class="imgpr" alt="Project 2 ">
-                <h3>Project 2: My first js project</h3>
-                <p>A fully functional e-commerce website built with Node.js, Express, and MongoDB.</p>
-                <a href="https://jsprojectfrontend1.netlify.app/" target="_blank" class="btn btn-success">View Live</a>
+                
+                <h3 data-en="Project 2: My first js project" data-ua="Проект 2: Мій перший проект на JavaScript">Project 2: My first js project</h3>
+                <p data-en="Js project built with Node.js" data-ua="Проект на JavaScript, побудований з використанням Node.js">Js project built with Node.js</p>
+                <a href="https://jsprojectfrontend1.netlify.app/" target="_blank" class="btn btn-primary" data-en="View Live" data-ua="Переглянути онлайн">View Live</a>
             </li>
             <!-- Add more projects here -->
         </ul>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Get in Touch</h2>
-        <p>Want to collaborate or discuss a project? Feel free to reach out to me via email or social media.</p>
-        <ul>
-            <li><a href="mailto:sanya.polovka@gmail.com">sanya.polovka@gmail.com</a></li>
-            <li><a href="#" target="_blank" class="btn btn-primary">LinkedIn</a></li>
-            <li><a href="#" target="_blank" class="btn btn-primary">Twitter</a></li>
-        </ul>
-    </section>
+    <!-- Contact Section -->
+<section id="contact">
+    <h2 data-en="Get in Touch" data-ua="Зв'язатися зі мною">Get in Touch</h2>
+    <p data-en="Want to collaborate or discuss a project? Feel free to reach out to me via email or social media." data-ua="Хочете співпрацювати або обговорити проект? Не соромтеся зв'язатися зі мною через електронну пошту або соціальні мережі.">Want to collaborate or discuss a project? Feel free to reach out to me via email or social media.</p>
+    <ul>
+        <li><a href="mailto:sanya.polovka@gmail.com" class="btn btn-primary mb5" data-en="My e-mail" data-ua="Моя електронна пошта">My e-mail</a></li>
+        <li><a href="tel:+380680691856" target="_blank" class="btn btn-primary" data-en="My phone" data-ua="Мій телефон">My phone</a></li>
+    </ul>
+</section>
     <script src="./index.js"></script>
     <script src="./lang-swich.js"></script>
 </body>
