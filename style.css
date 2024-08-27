@@ -5,33 +5,13 @@ body{
     background-color: rgb(35, 37, 41);
     color: white;
 }
-.nav{
-    display: flex;
-}
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-.nav ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
-.nav li {
-    margin-right: 20px;
-}
+
+
+
+
+
 
 .lang-button {
     margin-right: 10px;
@@ -42,10 +22,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.nav{
-    display: flex;
-    font-family: 'Lato', sans-serif;
-}
+
 
 header {
     position: fixed;
@@ -66,12 +43,7 @@ body {
     padding-left: 10px;
 }
 
-.navbar {
-    padding: 1rem;
-    background-color: #555;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-    margin: 0 auto;
-}
+
 
 .lang-button {
     margin-right: 10px;
@@ -216,4 +188,28 @@ p{
 }
 .nav-link{
   font-size: 20px;
+}
+#hero {
+  background: url('./img/noutbuk_kod_-darken.jpg');
+  height: 400px;
+  
+}
+
+
+
+
+#hero-div{
+  padding: 200px 0px;
+  margin: 0 auto;
+  height: 50px;
+  width: 470px;
+}
+body {
+  background-color: #212529;
+  color: #fff; /* set the text color to white */
+  font-family: 'Roboto', sans-serif;
+}
+.lang-switched #hero-title {
+  width: 700px;
+  margin: 0 auto;
 }

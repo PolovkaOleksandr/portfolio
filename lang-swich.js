@@ -1,5 +1,5 @@
 // const langSwitcher = document.getElementById('lang-switcher');
-// const heroTitle = document.getElementById('hero-title');
+const heroTitle = document.getElementById('hero-title');
 // const aboutText = document.querySelector('#about p');
 // const p=document.querySelector(".p")
 // const h22=document.getElementById('h22')
@@ -18,6 +18,10 @@
 //     aboutText.textContent = 'I am a junior developer from Kyiv, Ukraine. I have knowledge of html, css, and java script (English version)';
 //   }
 // });
+// const langSwitcher = document.querySelector('.lang-button');
+const heroDiv = document.querySelector('#hero-div');
+
+
 const langSwitcher = document.getElementById('lang-switcher');
 const translatableElements = document.querySelectorAll('[data-ua], [data-en]');
 
@@ -28,4 +32,5 @@ langSwitcher.addEventListener('change', () => {
     const text = element.getAttribute(`data-${lang}`);
     element.textContent = text;
   });
+  heroDiv.classList.toggle('lang-switched');
 });
