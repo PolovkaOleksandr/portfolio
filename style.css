@@ -208,3 +208,12 @@ body {
 .lang-span:hover{
   color: rgba(255, 255, 255, .75);
 }
+p{
+  margin: 0 auto;
+}
+.logo{
+  margin-right: 15px;
+}
+.nav-link{
+  font-size: 20px;
+}
