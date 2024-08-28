@@ -194,6 +194,15 @@ p{
   height: 400px;
   
 }
+#hero{
+  margin-bottom: 15px;
+}
+.m0a{
+  margin: 0 auto;
+}
+.about-title{
+  width: 150px;
+}
 
 
 
@@ -212,4 +221,29 @@ body {
 .lang-switched #hero-title {
   width: 700px;
   margin: 0 auto;
+}
+/* #projects{
+  
+} */
+.pr{
+  width: 350px;
+}
+.pr-list{
+  display: flex;
+  /* padding: 0px 100px; */
+  margin: 0 auto;
+  width: 1000px;
+}
+.pr1{
+  margin-right: 200px;
+  margin-left: 50px;
+}
+.pr-title{
+  width: 200px;
+}
+#about{
+  margin-bottom: 50px;
+}
+#projects{
+  margin-bottom: 50px;
 }
