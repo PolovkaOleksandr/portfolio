@@ -20,7 +20,7 @@ const heroTitle = document.getElementById('hero-title');
 // });
 // const langSwitcher = document.querySelector('.lang-button');
 const heroDiv = document.querySelector('#hero-div');
-
+const heroSpan=document.querySelector('.hero-span')
 
 const langSwitcher = document.getElementById('lang-switcher');
 const translatableElements = document.querySelectorAll('[data-ua], [data-en]');
@@ -33,4 +33,5 @@ langSwitcher.addEventListener('change', () => {
     element.textContent = text;
   });
   heroDiv.classList.toggle('lang-switched');
+  heroSpan.classList.toggle('lang-switched');
 });

@@ -40,7 +40,7 @@ body {
     background-color: rgb(35, 37, 41);
     color: white;
     font-family: 'Roboto', sans-serif;
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 
 
@@ -126,6 +126,9 @@ body {
     #hero-title {
       font-size: 24px;
     }
+    .hero-span{
+      font-size: 24px;
+    }
   
     /* Projects section */
     #projects ul {
@@ -189,27 +192,34 @@ p{
 .nav-link{
   font-size: 20px;
 }
+
+
 #hero {
   background: url('./img/noutbuk_kod_-darken.jpg');
-  height: 400px;
-  
+  height: 500px;
+  width: 100%;
 }
-
-
-
 
 #hero-div{
   padding: 200px 0px;
   margin: 0 auto;
   height: 50px;
-  width: 470px;
+  width: 560px;
 }
-body {
+/* body {
   background-color: #212529;
-  color: #fff; /* set the text color to white */
+  color: #fff; 
   font-family: 'Roboto', sans-serif;
-}
+} */
 .lang-switched #hero-title {
   width: 700px;
   margin: 0 auto;
+}
+.lang-switched .hero-title {
+  width: 700px;
+  margin: 0 auto;
+}
+.hero-span{
+  margin: 0 auto;
+  width: 230px;
 }
