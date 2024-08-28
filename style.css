@@ -40,11 +40,6 @@ body {
     background-color: rgb(35, 37, 41);
     color: white;
     font-family: 'Roboto', sans-serif;
-<<<<<<< HEAD
-    /* padding-left: 10px; */
-=======
-    
->>>>>>> 753ed4dc127396ae93f77d28528d9d0f3f995770
 }
 
 
@@ -107,7 +102,7 @@ body {
     
   
     /* Hero section */
-<<<<<<< HEAD
+
     #hero {
       margin-top: 50px;
     }
@@ -117,9 +112,7 @@ body {
     .hero-span{
       font-size: 24px;
     }
-=======
-    
->>>>>>> 753ed4dc127396ae93f77d28528d9d0f3f995770
+
   
     /* Projects section */
     #projects ul {
@@ -203,7 +196,7 @@ p{
   width: 700px;
   margin: 0 auto;
 }
-<<<<<<< HEAD
+
 .lang-switched .hero-title {
   width: 700px;
   margin: 0 auto;
@@ -211,7 +204,7 @@ p{
 .hero-span{
   margin: 0 auto;
   width: 230px;
-=======
+}
 /* #projects{
   
 } */
@@ -308,5 +301,5 @@ height: 300px;
   #contact{
     width: 320px;
   }
->>>>>>> 753ed4dc127396ae93f77d28528d9d0f3f995770
+
 }
