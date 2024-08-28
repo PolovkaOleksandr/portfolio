@@ -40,7 +40,11 @@ body {
     background-color: rgb(35, 37, 41);
     color: white;
     font-family: 'Roboto', sans-serif;
+<<<<<<< HEAD
     /* padding-left: 10px; */
+=======
+    
+>>>>>>> 753ed4dc127396ae93f77d28528d9d0f3f995770
 }
 
 
@@ -97,29 +101,13 @@ body {
     src: url('./fonts/OpenSans-Regular.ttf') format('truetype');
   }
 
-  /* Mobile devices (max-width: 768px) */
-@media only screen and (max-width: 768px) {
+  
+@media only screen and (max-width: 1000px) {
     /* Header and navigation */
-    header {
-      padding: 0.5rem;
-    }
-   .navbar {
-      padding: 0.5rem;
-    }
-   .nav {
-      flex-direction: column;
-    }
-   .nav ul {
-      flex-direction: column;
-    }
-   .nav li {
-      margin-right: 0;
-    }
-   .lang-button {
-      margin-right: 0;
-    }
+    
   
     /* Hero section */
+<<<<<<< HEAD
     #hero {
       margin-top: 50px;
     }
@@ -129,6 +117,9 @@ body {
     .hero-span{
       font-size: 24px;
     }
+=======
+    
+>>>>>>> 753ed4dc127396ae93f77d28528d9d0f3f995770
   
     /* Projects section */
     #projects ul {
@@ -145,25 +136,11 @@ body {
     }
   }
   
-  /* Smaller mobile devices (max-width: 480px) */
-  @media (max-width: 480px) {
+  
+  
     
-    header {
-      padding: 50px;
-    }
-   .navbar {
-      padding: 0.2rem;
-    }
   
-    /* Hero section */
-    #hero {
-      margin-top: 30px;
-    }
-    #hero-title {
-      font-size: 18px;
-    }
-  
-    /* Projects section */
+    /*  */
    .imgpr {
       width: 70%;
       height: auto;
@@ -173,7 +150,9 @@ body {
     width: 350px !important ;
     height: 200px;
   }
-}
+
+
+
 .mb5{
   margin-bottom: 5px;
 }
@@ -199,6 +178,15 @@ p{
   height: 500px;
   width: 100%;
 }
+#hero{
+  margin-bottom: 15px;
+}
+.m0a{
+  margin: 0 auto;
+}
+.about-title{
+  width: 150px;
+}
 
 #hero-div{
   padding: 200px 0px;
@@ -215,6 +203,7 @@ p{
   width: 700px;
   margin: 0 auto;
 }
+<<<<<<< HEAD
 .lang-switched .hero-title {
   width: 700px;
   margin: 0 auto;
@@ -222,4 +211,102 @@ p{
 .hero-span{
   margin: 0 auto;
   width: 230px;
+=======
+/* #projects{
+  
+} */
+.pr{
+  width: 350px;
+}
+.pr-list{
+  display: flex;
+  /* padding: 0px 100px; */
+  margin: 0 auto;
+  width: 1000px;
+}
+.pr1{
+  margin-right: 200px;
+  margin-left: 50px;
+}
+.pr-title{
+  width: 200px;
+}
+#about{
+  margin-bottom: 50px;
+}
+#projects{
+  margin-bottom: 50px;
+}
+.ex{
+  width: 200px;
+  height: 500px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 650px) {
+  body{
+    width: 300px;
+  }
+    /* header */
+  #header{
+    background-color: rgb(35, 37, 41);
+    width: 400px;
+    padding: 30px;
+  }
+  .logo{
+    margin-right: 10px;
+    width: 50px;
+  }
+  .nav-item{
+    display: none;
+
+  }
+  .navbar-nav{
+    margin-right: 0px;
+    width: 100px;
+  }
+
+  /* Hero section */
+  #hero {
+    margin-top: 185px;
+    background: url('./img/noutbuk_kod-darken-small.jpg');
+    width: 420px;
+height: 300px;
+  }
+  #hero-div{
+    
+    padding: 0px;
+    margin-top: 150px;
+    margin: 0 auto;
+    height: 250px;
+    width: 370px;
+    padding-top: 100px;
+  }
+  .hero-title{
+    width: 150px;
+  }
+  /* Projects section */
+  .pr-title{
+    margin-bottom: 15px;
+  }
+  .pr-list{
+    display: flex;
+    flex-direction: column;
+  }
+  .pr1{
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+  /* Contact */
+  #contact{
+    width: 320px;
+  }
+>>>>>>> 753ed4dc127396ae93f77d28528d9d0f3f995770
 }
