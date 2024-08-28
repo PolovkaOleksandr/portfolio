@@ -13,12 +13,12 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+            background-color: rgb(35, 37, 41);
             padding: 1rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            
         }
         .navbar {
             padding: 1rem;
@@ -47,11 +47,11 @@
     </style>
 </head>
 <body>
-    <header>
+    <header id="header" class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="logo"><h1 class="fs-2 text-primary"><a href="hero" class="text-decoration-none">Portfolio</a> </h1></li>
+                    <li class="logo"><h1 class="fs-2 text-primary"><a href="" class="text-decoration-none">Portfolio</a> </h1></li>
                     <li class="nav-item"><a class="nav-link" href="#about" data-en="About" data-ua="Про мене">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects" data-en="Projects" data-ua="Проекти">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact" data-en="Contact" data-ua="Контакти">Contact</a></li>
@@ -81,7 +81,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects ">
+    <section id="projects">
         <h2 data-en="My Projects" data-ua="Мої проекти" class="pr-title m0a ">My Projects</h2>
         <ul class="pr-list m0a">
             <li class="pr pr1">
@@ -100,7 +100,7 @@
         </ul>
     </section>
 
-    <!-- Contact Section -->
+    
     <!-- Contact Section -->
 <section id="contact">
     <h2 data-en="Get in Touch" data-ua="Зв'язатися зі мною" id="h22">Get in Touch</h2>
@@ -109,7 +109,9 @@
         <li><a href="mailto:sanya.polovka@gmail.com" class="btn btn-primary mb5" id="e-mail" data-en="My e-mail" data-ua="Моя електронна пошта">My e-mail</a></li>
         <li><a href="tel:+380680691856" target="_blank" class="btn btn-primary" id="tell" data-en="My phone" data-ua="Мій телефон">My phone</a></li>
     </ul>
+    <div class="ex">a</div>
 </section>
+
     <script src="./index.js"></script>
     <script src="./lang-swich.js"></script>
 </body>

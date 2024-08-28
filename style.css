@@ -40,7 +40,7 @@ body {
     background-color: rgb(35, 37, 41);
     color: white;
     font-family: 'Roboto', sans-serif;
-    padding-left: 10px;
+    
 }
 
 
@@ -97,35 +97,13 @@ body {
     src: url('./fonts/OpenSans-Regular.ttf') format('truetype');
   }
 
-  /* Mobile devices (max-width: 768px) */
-@media only screen and (max-width: 768px) {
+  
+@media only screen and (max-width: 1000px) {
     /* Header and navigation */
-    header {
-      padding: 0.5rem;
-    }
-   .navbar {
-      padding: 0.5rem;
-    }
-   .nav {
-      flex-direction: column;
-    }
-   .nav ul {
-      flex-direction: column;
-    }
-   .nav li {
-      margin-right: 0;
-    }
-   .lang-button {
-      margin-right: 0;
-    }
+    
   
     /* Hero section */
-    #hero {
-      margin-top: 50px;
-    }
-    #hero-title {
-      font-size: 24px;
-    }
+    
   
     /* Projects section */
     #projects ul {
@@ -142,25 +120,11 @@ body {
     }
   }
   
-  /* Smaller mobile devices (max-width: 480px) */
-  @media (max-width: 480px) {
+  
+  
     
-    header {
-      padding: 50px;
-    }
-   .navbar {
-      padding: 0.2rem;
-    }
   
-    /* Hero section */
-    #hero {
-      margin-top: 30px;
-    }
-    #hero-title {
-      font-size: 18px;
-    }
-  
-    /* Projects section */
+    /*  */
    .imgpr {
       width: 70%;
       height: auto;
@@ -170,7 +134,9 @@ body {
     width: 350px !important ;
     height: 200px;
   }
-}
+
+
+
 .mb5{
   margin-bottom: 5px;
 }
@@ -246,4 +212,76 @@ body {
 }
 #projects{
   margin-bottom: 50px;
+}
+.ex{
+  width: 200px;
+  height: 500px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 650px) {
+  body{
+    width: 300px;
+  }
+    /* header */
+  #header{
+    background-color: rgb(35, 37, 41);
+    width: 400px;
+    padding: 30px;
+  }
+  .logo{
+    margin-right: 10px;
+    width: 50px;
+  }
+  .nav-item{
+    display: none;
+
+  }
+  .navbar-nav{
+    margin-right: 0px;
+    width: 100px;
+  }
+
+  /* Hero section */
+  #hero {
+    margin-top: 185px;
+    background: url('./img/noutbuk_kod-darken-small.jpg');
+    width: 420px;
+height: 300px;
+  }
+  #hero-div{
+    
+    padding: 0px;
+    margin-top: 150px;
+    margin: 0 auto;
+    height: 250px;
+    width: 370px;
+    padding-top: 100px;
+  }
+  .hero-title{
+    width: 150px;
+  }
+  /* Projects section */
+  .pr-title{
+    margin-bottom: 15px;
+  }
+  .pr-list{
+    display: flex;
+    flex-direction: column;
+  }
+  .pr1{
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+  /* Contact */
+  #contact{
+    width: 320px;
+  }
 }
