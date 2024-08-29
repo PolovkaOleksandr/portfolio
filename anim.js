@@ -1,8 +1,5 @@
 const animItems = document.querySelectorAll('.anim');
 
-// Add a flag to keep track of animated elements
-const animatedItems = {};
-
 function offset(el) {
   const rect = el.getBoundingClientRect(),
     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
@@ -20,9 +17,8 @@ function isElementVisible(el, threshold) {
 }
 
 function animonScroll() {
-  for (let index = 0; index < animItems.length; index++) {
-    const animItem = animItems[index];
-    console.log(`animItem: ${animItem}`);
+  console.log('animonScroll called');
+  animItems.forEach((animItem) => {
     const animItemHeight = animItem.offsetHeight;
     const animItemOffset = offset(animItem).top;
     const animStart = 4;
@@ -34,12 +30,12 @@ function animonScroll() {
 
     const isVisible = isElementVisible(animItem, 0.25); // Check if element is at least 25% visible
     console.log(`isVisible: ${isVisible}`);
-    if (isVisible && !(animItem in animatedItems)) {
-      console.log(`animItem.classList.add('active')`);
+    if (isVisible && !animItem.hasAttribute('data-animated')) {
+      console.log(`adding active class to ${animItem}`);
       animItem.classList.add('active');
-      animatedItems[animItem] = true; // Mark as animated
+      animItem.setAttribute('data-animated', 'true'); // Mark as animated
     }
-  }
+  });
 }
 
 if (animItems.length > 0) {
@@ -49,7 +45,3 @@ if (animItems.length > 0) {
 setTimeout(() => {
   animonScroll();
 }, 300);
-
-// Додатковий код для перевірки
-console.log('animItems:', animItems);
-console.log('animatedItems:', animatedItems);
