@@ -1,9 +1,8 @@
-.anim{
-    transform: translate(0px 120%);
+.anim {
     opacity: 0;
-    transition: all 0.8s ease 0s;
-}
-.active{
-    transform: translate(0px 0px);
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .anim.active {
     opacity: 1;
-}
+  }
