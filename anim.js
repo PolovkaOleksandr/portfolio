@@ -1,38 +1,7 @@
-// const animItems =document.querySelectorAll('.anim');
-// if (animItems.length > 0) {
-//     window.addEventListener('scroll', animonScroll);
-// function animonScroll() {
-//     for (let index = 0; index < animItems.length; index++) {
-//         const animItem= animItems [index];
-//         const animItemHeight = animItem.offsetHeight;
-//         const animItemOffset = offset(animItem).top;
-//         const animStart = 4;
-
-//     let animItemPoint = window.innerHeight -animItemHeight / animStart;
-//     if (animItemHeight > window.innerHeight) {
-//         animItemPoint = window.innerHeight -window.innerHeight / animStart;
-
-// if ((pageYOffset > animItemOffset- animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
-//     animItem.classList.add('active');
-// } else {
-// if (lanimItem.classList.contains('_anim-no-hide')) {
-// animItem.classList.remove('active');
-// }
-// }
-// }
-// }
-// }
-// function offset(el) {
-//     const rect = el.getBoundingClientRect(),
-//     scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-//     scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-//     return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
-//     }
-// setTimeout(()=>{
-//     animonScroll();
-// },300);
-//         }
 const animItems = document.querySelectorAll('.anim');
+
+// Add a flag to keep track of animated elements
+const animatedItems = {};
 
 function offset(el) {
   const rect = el.getBoundingClientRect(),
@@ -53,6 +22,7 @@ function isElementVisible(el, threshold) {
 function animonScroll() {
   for (let index = 0; index < animItems.length; index++) {
     const animItem = animItems[index];
+    console.log(`animItem: ${animItem}`);
     const animItemHeight = animItem.offsetHeight;
     const animItemOffset = offset(animItem).top;
     const animStart = 4;
@@ -63,10 +33,11 @@ function animonScroll() {
     }
 
     const isVisible = isElementVisible(animItem, 0.25); // Check if element is at least 25% visible
-    if (isVisible) {
+    console.log(`isVisible: ${isVisible}`);
+    if (isVisible && !(animItem in animatedItems)) {
+      console.log(`animItem.classList.add('active')`);
       animItem.classList.add('active');
-    } else {
-      animItem.classList.remove('active');
+      animatedItems[animItem] = true; // Mark as animated
     }
   }
 }
@@ -78,3 +49,7 @@ if (animItems.length > 0) {
 setTimeout(() => {
   animonScroll();
 }, 300);
+
+// Додатковий код для перевірки
+console.log('animItems:', animItems);
+console.log('animatedItems:', animatedItems);
