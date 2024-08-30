@@ -232,8 +232,8 @@ p{
   margin-bottom: 50px;
 }
 .ex{
-  width: 200px;
-  height: 500px;
+  
+  height: 300px;
 }
 
 
@@ -321,4 +321,16 @@ height: 300px;
 }
 .pr-title{
   margin-bottom: 15px;
+}
+.socic{
+  width: 30px;
+  height: 30px;
+}
+.soc-list{
+  display: flex;
+  width: 130px;
+  padding-left: 0px;
+}
+.mrsoc{
+  margin-right: 20px;
 }
