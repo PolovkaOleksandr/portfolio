@@ -219,7 +219,7 @@ p{
   width: 1100px;
 }
 .pr1{
-  margin-right: 100px;
+  margin-right: 80px;
   
 }
 .pr-title{
@@ -244,11 +244,11 @@ p{
 
 
 
-@media (max-width: 650px) {
+/* @media (max-width: 650px) {
   body{
     width: 300px;
   }
-    /* header */
+    
   #header{
     background-color: rgb(35, 37, 41);
     width: 400px;
@@ -267,7 +267,7 @@ p{
     width: 100px;
   }
 
-  /* Hero section */
+  
   #hero {
     margin-top: 185px;
     background: url('./img/noutbuk_kod-darken-small.jpg');
@@ -277,7 +277,7 @@ height: 300px;
   #hero-div{
     
     padding: 0px;
-    /* margin-top: 140px; */
+    
     margin: 0 auto;
     height: 250px;
     width: 370px;
@@ -286,7 +286,7 @@ height: 300px;
   .hero-title{
     width: 150px;
   }
-  /* Projects section */
+  
   .pr-title{
     margin-bottom: 15px;
   }
@@ -298,11 +298,178 @@ height: 300px;
     margin-left: 0px;
     margin-bottom: 10px;
   }
-  /* Contact */
+  
   #contact{
     width: 320px;
   }
 
+} */
+
+/* ... інші стилі ... */
+
+/* Адаптація для телефонів */
+@media only screen and (max-width: 480px) {
+  /* Загальні стилі */
+  body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Шапка */
+  #header {
+    background-color: rgb(35, 37, 41);
+    width: 100%;
+    padding: 15px;
+  }
+  .logo {
+    margin-right: 10px;
+    width: 30px;
+  }
+  .nav-item {
+    display: none;
+  }
+  .navbar-nav {
+    margin-right: 0px;
+    width: 100px;
+  }
+  
+  /* Геройський розділ */
+  #hero {
+    margin-top: 100px;
+    background: url('./img/noutbuk_kod-darken-small.jpg');
+    width: 100%;
+    height: 200px;
+  }
+  #hero-div {
+    padding: 0px;
+    margin: 0 auto;
+    height: 150px;
+    width: 90%;
+    padding-top: 50px;
+  }
+  .hero-title {
+    width: 100px;
+  }
+  
+  /* Розділ проєктів */
+  .pr-title {
+    margin-bottom: 10px;
+  }
+  .pr-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .pr1 {
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+  
+  /* Розділ контактів */
+  #contact {
+    width: 90%;
+  }
+  
+  /* Соціальні мережі */
+  .soc-list {
+    display: flex;
+    width: 150px;
+    padding-left: 0px;
+  }
+  .mrsoc {
+    margin-right: 10px;
+  }
+}
+
+/* Адаптація для телефонів */
+@media only screen and (max-width: 480px) {
+  /* Загальні стилі */
+  #body {
+    /* width: 30%; */
+    padding: 0;
+    margin: 0;
+  }
+  h1{
+    font-size: 20px;
+  }
+  /* Шапка */
+  #header {
+    background-color: rgb(35, 37, 41);
+    width: 300px;
+    padding: 10px;
+  }
+.container-fluid{
+  width: 300px;
+}
+  .logo {
+    margin-right: 5px;
+    width: 20px;
+    font-size: 20px;
+  }
+  .logo-link{
+    font-size: 20px !important;
+  }
+  .logo-h1{
+    font-size: 20px !important;
+  }
+  .nav-item {
+    display: none;
+  }
+  .navbar-nav {
+    margin-right: 0px;
+    width: 50px;
+  }
+  
+  /* Геройський розділ */
+  #hero {
+    margin-top: 50px;
+    background: url('./img/noutbuk_kod-darken-small.jpg');
+    width: 100%;
+    height: 150px;
+  }
+  #hero-div {
+    padding: 0px;
+    margin: 0 auto;
+    height: 100px;
+    width: 80%;
+    padding-top: 30px;
+  }
+  #hero-title {
+    width: 290px;
+    font-size: 20px;
+  }
+  .hero-span{
+    width: 120px;
+    font-size: 20px;
+  }
+  
+  /* Розділ проєктів */
+  .pr-title {
+    margin-bottom: 5px;
+  }
+  .pr-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .pr1 {
+    margin-left: 0px;
+    margin-bottom: 5px;
+  }
+  
+  /* Розділ контактів */
+  #contact {
+    width: 80%;
+  }
+  
+  /* Соціальні мережі */
+  .soc-list {
+    display: flex;
+    width: 120px;
+    padding-left: 0px;
+  }
+  .mrsoc {
+    margin-right: 5px;
+  }
 }
 
 /* Add this media query to adjust the layout for tablets */
@@ -328,7 +495,7 @@ height: 300px;
 }
 .soc-list{
   display: flex;
-  width: 130px;
+  width: 170px;
   padding-left: 0px;
 }
 .mrsoc{
