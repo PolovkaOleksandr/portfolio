@@ -97,7 +97,13 @@ body {
     src: url('./fonts/OpenSans-Regular.ttf') format('truetype');
   }
 
-  
+  .hero-title{
+    width: 400px;
+  }
+
+
+
+
 @media only screen and (max-width: 1000px) {
     /* Header and navigation */
     
@@ -130,10 +136,7 @@ body {
     }
   }
   
-  
-  
-    
-  
+
     /*  */
    .imgpr {
       width: 70%;
@@ -188,6 +191,7 @@ p{
   height: 50px;
   width: 560px;
 }
+
 /* body {
   background-color: #212529;
   color: #fff; 
@@ -204,7 +208,7 @@ p{
 }
 .hero-span{
   margin: 0 auto;
-  width: 230px;
+  width: 250px;
 }
 /* #projects{
   
@@ -244,66 +248,7 @@ p{
 
 
 
-/* @media (max-width: 650px) {
-  body{
-    width: 300px;
-  }
-    
-  #header{
-    background-color: rgb(35, 37, 41);
-    width: 400px;
-    padding: 30px;
-  }
-  .logo{
-    margin-right: 10px;
-    width: 50px;
-  }
-  .nav-item{
-    display: none;
 
-  }
-  .navbar-nav{
-    margin-right: 0px;
-    width: 100px;
-  }
-
-  
-  #hero {
-    margin-top: 185px;
-    background: url('./img/noutbuk_kod-darken-small.jpg');
-    width: 420px;
-height: 300px;
-  }
-  #hero-div{
-    
-    padding: 0px;
-    
-    margin: 0 auto;
-    height: 250px;
-    width: 370px;
-    padding-top: 100px;
-  }
-  .hero-title{
-    width: 150px;
-  }
-  
-  .pr-title{
-    margin-bottom: 15px;
-  }
-  .pr-list{
-    display: flex;
-    flex-direction: column;
-  }
-  .pr1{
-    margin-left: 0px;
-    margin-bottom: 10px;
-  }
-  
-  #contact{
-    width: 320px;
-  }
-
-} */
 
 /* ... інші стилі ... */
 
@@ -332,6 +277,10 @@ height: 300px;
   .navbar-nav {
     margin-right: 0px;
     width: 100px;
+    margin-bottom: 0px;
+  }
+  .logo-h1{
+    margin-top: 5px;
   }
   
   /* Геройський розділ */
@@ -395,7 +344,7 @@ height: 300px;
   /* Шапка */
   #header {
     background-color: rgb(35, 37, 41);
-    width: 300px;
+    width: 100%;
     padding: 10px;
   }
 .container-fluid{
@@ -407,7 +356,7 @@ height: 300px;
     font-size: 20px;
   }
   .logo-link{
-    font-size: 20px !important;
+    font-size: 24px !important;
   }
   .logo-h1{
     font-size: 20px !important;
@@ -417,9 +366,21 @@ height: 300px;
   }
   .navbar-nav {
     margin-right: 0px;
-    width: 50px;
+    width: 70px;
+    margin-bottom: 0px;
+    margin-top: 9px;
+  }
+  .nav-link{
+    font-size: 22px;
+  }
+  #logo-link{
+    font-size: 22px;
   }
   
+  .lang-span{
+    padding: 8px 8px ;
+  }
+
   /* Геройський розділ */
   #hero {
     margin-top: 100px;
@@ -431,7 +392,7 @@ height: 300px;
     padding: 0px;
     margin: 0 auto;
     height: 100px;
-    width: 80%;
+    width: 300px;
     padding-top: 30px;
   }
   #hero-title {
@@ -439,7 +400,7 @@ height: 300px;
     font-size: 20px;
   }
   .hero-span{
-    width: 120px;
+    width: 150px;
     font-size: 20px;
   }
   
@@ -464,7 +425,9 @@ height: 300px;
   #contact {
     width: 80%;
   }
-  
+  .cont-text{
+    margin-bottom: 15px;
+  }
   /* Соціальні мережі */
   .soc-list {
     display: flex;
@@ -477,10 +440,10 @@ height: 300px;
 }
 
 /* Add this media query to adjust the layout for tablets */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
   /* Hide all navigation elements except for the logo */
   .nav-item {
-    display: none;
+    display: block;
   }
   /* .navbar-nav {
     display: none;
@@ -488,7 +451,13 @@ height: 300px;
   .logo {
     display: block;
   }
-  
+  #header{
+    width: 400px;
+  }
+  #hero{
+    background-image: url(./img/noutbuk_kod_-darken.jpg);
+    width: 100%;
+  }
 }
 .pr-title{
   margin-bottom: 15px;
